@@ -1,26 +1,36 @@
 <!DOCTYPE html>
-<html lang="en" class="m-6 has-background-warning-light">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TV Show Search</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
 </head>
 
-<body class="container is-fluid">
-    <h1 class="is-size-1">TV Show Search</h1>
-    <form id="searchForm">
-        <input class="input is-link" type="text" placeholder="TV Show Title" name="query" style="max-width: 40vw">
-        <button class="button is-link is-rounded" id="searchButton">Search</button>
-        <button class="button is-danger is-light is-rounded" id="resetButton">Reset</button>
-    </form>
-    <div id="imgDiv" class="mt-3">
+<body>
+    <section class="container is-fluid pageContent">
+        <h1 class="is-size-1 title">TV Show Search</h1>
+        <form id="searchForm">
+            <input class="input is-link" type="text" placeholder="TV Show Title" name="query" style="max-width: 40vw">
+            <button class="button is-link is-rounded" id="searchButton">Search</button>
+            <button class="button is-danger is-light is-rounded" id="resetButton">Reset</button>
+        </form>
+        <div id="imgDiv" class="mt-3">
 
+        </div>
+        <script src="app.js"></script>
+    </section>
+
+    <div class="footer">
+        <p class="caption">Made with ❤️ by <a href="https://edmond-luu.github.io" target="_blank" rel="noreferrer">Edmond Luu</a></p>
     </div>
-    <script src="app.js"></script>
 </body>
 
 </html>
